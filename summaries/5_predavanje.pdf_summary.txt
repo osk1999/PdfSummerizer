@@ -1,0 +1,40 @@
+### Summary and Detailed Explanations of Network Analysis Concepts
+
+#### Matrike Sosednosti (Adjacency Matrix)
+**Definition**: An adjacency matrix is a square matrix used to represent a graph. Each element \( A_{ij} \) represents the presence (1) or absence (0) of an edge between vertices \( i \) and \( j \).
+- **Undirected Graphs**: For undirected graphs, the matrix is symmetric (\( A_{ij} = A_{ji} \)), meaning if there is an edge from \( i \) to \( j \), there is also an edge from \( j \) to \( i \).
+- **Directed Graphs**: For directed graphs, the matrix isn't necessarily symmetric (\( A_{ij} \neq A_{ji} \)), indicating the direction of the edge.
+- **Weighted Graphs**: In weighted graphs, the matrix elements represent the weights of the edges instead of just 0 or 1.
+
+#### Seznam Sosednosti (Adjacency List)
+**Definition**: An adjacency list is another way to represent a graph, where each vertex stores a list of its adjacent vertices.
+- **Usage**: This method is more efficient for sparse graphs (graphs with relatively few edges compared to vertices).
+
+#### Biparticijska Omrežja (Bipartite Networks)
+**Definition**: Bipartite networks consist of two distinct sets of vertices, where edges only occur between vertices from different sets, not within the same set.
+- **Examples**: Examples include networks connecting readers and books, buyers and products, or actors and movies.
+
+#### Najkrajša Pot (Shortest Path)
+**Definition**: The shortest path problem involves finding the shortest route between two vertices in a graph.
+- **Measurement**: The path can be measured by the number of edges (unweighted graphs) or the sum of weights (weighted graphs).
+- **Algorithms**: Common algorithms include Dijkstra's algorithm for finding the shortest paths from a single source vertex.
+- **Social Distance**: In social networks, the shortest path is referred to as social distance, which is the minimal number of steps between two individuals.
+
+#### Povprečna Najkrajša Pot (Average Shortest Path)
+**Definition**: The average shortest path length is a measure of the efficiency of information transfer across a network.
+- **Calculation**: It is calculated as the average of the shortest paths between all pairs of vertices.
+
+#### Premer Omrežja (Network Diameter)
+**Definition**: The network diameter is the longest shortest path between any two vertices in the network.
+- **Significance**: It indicates the maximal distance between any two vertices and is relevant for assessing the overall spread or connectivity of the network.
+
+#### Učinkovitost Omrežja (Network Efficiency)
+**Definition**: Network efficiency measures how effectively a network transmits information between its vertices.
+- **Calculation**: It is inversely related to the average shortest path length; higher efficiency indicates that vertices communicate more quickly.
+
+#### Ranljivost Omrežij (Network Vulnerability)
+**Definition**: Network vulnerability assesses how the efficiency of a network changes when vertices or edges are removed.
+- **Implications**: It is crucial for understanding the resilience of transport, communication, and neurological networks to failures or attacks.
+
+### Practical Applications and Cases
+This material covers essential concepts in network analysis, providing methods to represent and analyze different types of networks (undirected, directed, weighted, bipartite), calculate key metrics (shortest paths, diameter, efficiency), and evaluate network robustness and efficiency. These concepts are foundational for understanding and designing systems in various fields, including computer science, sociology, neurology, and transportation.
