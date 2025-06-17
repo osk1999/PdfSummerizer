@@ -3,7 +3,7 @@ import os
 import json
 from pypdf import PdfReader
 
-API_KEY = "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"
+API_KEY = os.environ.get('dsAPIKEY')
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 TEXT = []
 
